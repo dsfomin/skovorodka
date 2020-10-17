@@ -119,6 +119,14 @@ button::-moz-focus-inner {
   border: 0;
 }
 
+input,
+textarea {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
 @font-face {
   font-family: "Arial";
   font-display: swap;
