@@ -3208,7 +3208,7 @@ header {
 .cutlery-cart__count-counter input {
   color: #000;
   width: 15px;
-  height: 20px;
+  height: 43px;
 }
 
 .cutlery-cart__count-counter input:disabled {
@@ -3219,7 +3219,7 @@ header {
 .cutlery-cart__count-minus {
   border: none;
   background: none;
-  height: 20px;
+  height: 43px;
   padding: 0;
   padding-right: 5px;
 }
@@ -3227,7 +3227,7 @@ header {
 .cutlery-cart__count-plus {
   border: none;
   background: none;
-  height: 20px;
+  height: 43px;
   padding: 0;
   padding-left: 5px;
 }
