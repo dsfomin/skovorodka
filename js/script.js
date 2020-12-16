@@ -359,6 +359,15 @@ if (userCartDdBlock) {
 
 // menu tabs
 
+$(document).ready(function () {
+	$('a.nav-bottom__triggers-item[href*=\\#]').on('click', function (e) {
+		e.preventDefault();
+		$('html, body').animate({
+			scrollTop: ($(this.hash).offset().top - $('.header').innerHeight() - $('.header').innerHeight() * 0.1)
+		}, 600);
+	});
+});
+
 const tabsMenu = document.querySelector('.nav-bottom__triggers-item');
 
 if (tabsMenu) {
@@ -366,6 +375,7 @@ if (tabsMenu) {
 
 		item.addEventListener('click', function (e) {
 			e.preventDefault();
+
 			const id = e.target.getAttribute('href').replace('#', '');
 
 			document.querySelectorAll('.nav-bottom__triggers-item').forEach((item) =>
