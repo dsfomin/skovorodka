@@ -1,4 +1,4 @@
-$(document).ready(function () {
+﻿$(document).ready(function () {
 	$('.slider').slick({
 		dots: true,
 		arrows: true,
@@ -357,7 +357,7 @@ if (userCartDdBlock) {
 	});
 }
 
-// menu tabs
+// menu tabs d
 
 $(document).ready(function () {
 	$('a.nav-bottom__triggers-item[href*=\\#]').on('click', function (e) {
