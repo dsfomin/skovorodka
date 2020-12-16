@@ -289,18 +289,11 @@ body._lock {
   padding-bottom: 15px;
 }
 
-.menu__content-item {
-  display: none;
-}
-
-.menu__content-item--active {
-  display: block;
-}
-
 .menu__title {
   line-height: 55px;
   font-size: 33.33px;
   padding-bottom: 21px;
+  padding-top: 21px;
 }
 
 .menu__items {
@@ -521,7 +514,7 @@ body._lock {
 .slider {
   position: relative;
   min-width: 0;
-  margin-bottom: 46px;
+  margin-bottom: 10px;
 }
 
 .slick-list {
