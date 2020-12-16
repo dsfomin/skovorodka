@@ -356,6 +356,31 @@ if (userCartDdBlock) {
 		}
 	});
 }
+
+// menu tabs
+
+const tabsMenu = document.querySelector('.nav-bottom__triggers-item');
+
+if (tabsMenu) {
+	document.querySelectorAll('.nav-bottom__triggers-item').forEach((item) => {
+
+		item.addEventListener('click', function (e) {
+			e.preventDefault();
+			const id = e.target.getAttribute('href').replace('#', '');
+
+			document.querySelectorAll('.nav-bottom__triggers-item').forEach((item) =>
+				item.classList.remove('nav-bottom__triggers-item--active')
+			);
+			document.querySelectorAll('.menu__content-item').forEach((item) =>
+				item.classList.remove('menu__content-item--active')
+			);
+
+			item.classList.add('nav-bottom__triggers-item--active');
+			document.getElementById(id).classList.add('menu__content-item--active');
+		})
+	});
+	tabsMenu.click();
+}
 const tabsCart = document.querySelector('.tabs-cart__item');
 
 if (tabsCart) {
@@ -650,7 +675,9 @@ addCounter(omelet);
 addCounter(mushrooms);
 addCounter(cheese);
 addCounter(pasta);
-$(function () {
-	$('.dishes-blockcart__column').jScrollPane({ showArrows: false, resizeSensor: true });
-});
 
+if ($('.dishes-blockcart__column').length != 0) {
+	$(function () {
+		$('.dishes-blockcart__column').jScrollPane({ showArrows: false, resizeSensor: true });
+	});
+}
